@@ -31,9 +31,21 @@ class PicturesController < ActionController::Base
   end
 
   def picture1
+    @picture = 
+      {
+        :title  => 'Baby Pandas',
+        :artist => 'Panda Lover',
+        :url    => "http://pandastephanienguyen.edublogs.org/files/2010/08/baby-panda2.jpg"
+      }
   end
 
   def picture2
+    @picture =
+      {
+        :title  => 'Baby Pig',
+        :artist => 'piggytime',
+        :url    => "http://www.crinkleblog.com/wp-content/uploads/2013/04/adorable-baby-piglet.jpg"
+      }
   end
 
 end
