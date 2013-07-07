@@ -45,30 +45,10 @@ class PicturesController < ActionController::Base
     @picture = @pictures[params[:id].to_i]
   end
 
-  def picture0
-    @picture = {
-      :title  => 'Penguin',
-      :artist => 'pingu',
-      :url    => "http://upload.wikimedia.org/wikipedia/en/c/c2/Pingu.png"
-    }
+  def new
   end
 
-  def picture1
-    @picture = 
-      {
-        :title  => 'Baby Pandas',
-        :artist => 'Panda Lover',
-        :url    => "http://pandastephanienguyen.edublogs.org/files/2010/08/baby-panda2.jpg"
-      }
-  end
-
-  def picture2
-    @picture =
-      {
-        :title  => 'Baby Pig',
-        :artist => 'piggytime',
-        :url    => "http://www.crinkleblog.com/wp-content/uploads/2013/04/adorable-baby-piglet.jpg"
-      }
+  def create
   end
 
 end
