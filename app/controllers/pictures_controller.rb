@@ -22,6 +22,9 @@ class PicturesController < ActionController::Base
     ]
   end
 
+  def show
+  end
+
   def picture0
     @picture = {
       :title  => 'Penguin',
