@@ -1,18 +1,18 @@
 <h1>Add New Picture Here :)</h1>
-<form action= "/pictures" method= "POST">
-	<p>
-		<label>Title</lable><br>
-		<input type="text" name="title"/>
-	</p>
-	<p>
-		<label>Artist</lable><br>
-		<input type="text" name="artist"/>
-	</p>
-	<p>
-		<label>URL</lable><br>
-		<input type="text" name="url"/>
-	</p>
-	<p>
-		<input type="submit"/>
-	</p>
-</form>
+<%= form_tag "/pictures" do %>
+  <p>
+    <%= label_tag "artist" %><br>
+    <%= text_field_tag "artist" %>
+  </p>
+  <p>
+    <%= label_tag "title" %><br>
+    <%= text_field_tag "title" %>
+  </p>
+  <p>
+    <%= label_tag "url" %><br>
+    <%= text_field_tag "url" %>
+  </p>
+  <p>
+    <%= submit_tag "Save" %>
+  </p>
+<% end %>
