@@ -1,6 +1,7 @@
 class PicturesController < ActionController::Base
 
   def index
+    @pictures = Picture.all.reverse
   end
 
   def show
