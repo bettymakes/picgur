@@ -20,7 +20,15 @@ class PicturesController < ActionController::Base
         :url    => "http://www.crinkleblog.com/wp-content/uploads/2013/04/adorable-baby-piglet.jpg"
       }
     ]
+  end
 
+  def picture0
+  end
+
+  def picture1
+  end
+
+  def picture2
   end
 
 end
