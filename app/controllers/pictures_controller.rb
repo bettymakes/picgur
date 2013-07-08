@@ -21,4 +21,7 @@ class PicturesController < ActionController::Base
     end
   end
 
+  def edit
+  end
+
 end
