@@ -1,5 +1,6 @@
 <h1><%= @picture[:title] %></h1>
 <h3><%= @picture[:artist] %></h3>
 <img src = "<%= @picture[:url] %>">
-
+<br>
 <%= link_to "Back to the Future", pictures_url %>
+<%= link_to "Edit this Badboy", edit_picture_url %>
